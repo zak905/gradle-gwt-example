@@ -19,9 +19,7 @@ repositories { mavenCentral() }
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    providedCompile('com.vaadin.polymer:vaadin-gwt-polymer-elements:1.7.0.0')
-    providedCompile('org.fusesource.restygwt:restygwt:2.2.0') 
-    testCompile('junit:junit:4.11')
+    testCompile('junit:junit:4.12')
 }
 
 
@@ -29,8 +27,6 @@ gwt {
     gwtVersion='2.8.0'
 
     modules 'com.example.gwtmodulename'
-
-   
 
     maxHeapSize = "1024M"
     

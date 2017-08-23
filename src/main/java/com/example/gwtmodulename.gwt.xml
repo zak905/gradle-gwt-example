@@ -4,11 +4,6 @@
 
   <source path="" />
   <!-- Libs inherits -->
-  
-    <inherits name="com.vaadin.polymer.Elements" />
-   
-    <inherits name="org.fusesource.restygwt.RestyGWT" />
-   
 
   <entry-point class="com.example.App" />
 
