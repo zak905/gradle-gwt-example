@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+        classpath 'org.wisepersist:gwt-gradle-plugin:1.0.6'
     }
 }
 
@@ -24,14 +24,20 @@ dependencies {
 
 
 gwt {
-    gwtVersion='2.8.0'
+    gwtVersion='2.8.2'
 
     modules 'com.example.gwtmodulename'
+
+    logLevel = 'DEBUG'
 
     maxHeapSize = "1024M"
     
     superDev {
         noPrecompile=true
+    }
+
+    jsInteropExports {
+        shouldGenerate = true
     }
 }
 
